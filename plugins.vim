@@ -37,9 +37,13 @@ call plug#end()
 let g:deoplete#enable_at_startup = 1
 
 " Clang
-" TODO make this configurable, maybe via ansible!
-let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+if !exists("g:deoplete#sources#clang#libclang_path")
+    let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
+endif
+
+if !exists("g:deoplete#sources#clang#clang_header")
+    let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+endif
 
 " ==========================================================
 " Neomake Settings
