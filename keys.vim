@@ -49,3 +49,8 @@ nnoremap <silent> <Leader>fg :GFiles<CR>
 
 " search previous files and buffers
 nnoremap <silent> <Leader>fh :History<CR>
+
+" ==========================================================
+" Clang Tools
+" ==========================================================
+noremap <leader>cr :pyf clang-rename.py<cr>
