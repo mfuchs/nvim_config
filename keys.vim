@@ -53,4 +53,4 @@ nnoremap <silent> <Leader>fh :History<CR>
 " ==========================================================
 " Clang Tools
 " ==========================================================
-noremap <leader>cr :pyf clang-rename.py<cr>
+execute "noremap <leader>cr :pyf " . g:mat#clang_rename_py_path . "<cr>"

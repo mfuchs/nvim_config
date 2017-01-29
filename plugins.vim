@@ -68,3 +68,10 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " ==========================================================
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" ==========================================================
+" Clang Tools
+" ==========================================================
+if !exists("g:mat#clang_rename_py_path")
+    let g:mat#clang_rename_py_path="clang-rename.py"
+endif
