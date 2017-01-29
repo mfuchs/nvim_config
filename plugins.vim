@@ -75,3 +75,7 @@ let g:UltiSnipsEditSplit="vertical"
 if !exists("g:mat#clang_rename_py_path")
     let g:mat#clang_rename_py_path="clang-rename.py"
 endif
+
+if !exists("g:mat#clang_format_py_path")
+    let g:mat#clang_format_py_path="/usr/share/clang/clang-format.py"
+endif
