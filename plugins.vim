@@ -25,9 +25,13 @@ call plug#begin('~/.config/nvim/plugged')
     " Statusbar
     Plug 'bling/vim-airline'
 
-"    " YouCompleteMe
-"    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-"
+    " YouCompleteMe
+if exists("g:mat#ycm_use_system") && g:mat#ycm_use_system
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --system-boost' }
+else
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+endif
+
 
 call plug#end()
 
