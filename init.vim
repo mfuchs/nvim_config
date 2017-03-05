@@ -2,8 +2,8 @@ if filereadable("vars.vim")
     source vars.vim
 endif
 
-source plugins.vim
-source basics.vim
-source keys.vim
-source filetypes.vim
-source highlight.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/basics.vim
+source ~/.config/nvim/keys.vim
+source ~/.config/nvim/filetypes.vim
+source ~/.config/nvim/highlight.vim
