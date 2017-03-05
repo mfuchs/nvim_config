@@ -10,17 +10,17 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'sirver/ultisnips'
 
     " Auto Completion
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'davidhalter/jedi'
-    Plug 'zchee/deoplete-clang'
-    Plug 'zchee/deoplete-jedi'
+"    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"    Plug 'davidhalter/jedi'
+"    Plug 'zchee/deoplete-clang'
+"    Plug 'zchee/deoplete-jedi'
 
     " Fuzzy Completion, similar to ctrlp.vim
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
 
     " Syntax Checking
-    Plug 'neomake/neomake'
+"    Plug 'neomake/neomake'
 
     " Statusbar
     Plug 'bling/vim-airline'
