@@ -4,7 +4,7 @@
 " https://github.com/junegunn/vim-plug
 " ==========================================================
 call plug#begin('~/.config/nvim/plugged')
-    Plug 'ervandew/supertab'
+"    Plug 'ervandew/supertab'
 
     " Snippets
     Plug 'sirver/ultisnips'
@@ -20,7 +20,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf.vim'
 
     " Syntax Checking
-"    Plug 'neomake/neomake'
+    Plug 'neomake/neomake'
 
     " Statusbar
     Plug 'bling/vim-airline'
@@ -72,6 +72,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " ==========================================================
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Ensure Python 2 is used, to avoid issues with YCM.
+let g:UltiSnipsUsePythonVersion=2
 
 " ==========================================================
 " Clang Tools

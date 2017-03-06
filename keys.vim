@@ -55,3 +55,11 @@ nnoremap <silent> <Leader>fh :History<CR>
 " ==========================================================
 execute "noremap <leader>cr :pyf " . g:mat#clang_rename_py_path . "<cr>"
 execute "noremap <leader>cf :pyf " . g:mat#clang_format_py_path . "<cr>"
+
+" ==========================================================
+" UltiSnips
+" ==========================================================
+" Use comfortable tab key, works good with SuperTab installation.
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
